@@ -1,0 +1,36 @@
+respawn = "BASE";
+respawndelay = 5;
+onLoadMission= "DayZ Epoch";
+OnLoadIntro = "http://epochmod.com/";
+OnLoadIntroTime = False;
+OnLoadMissionTime = False;
+disabledAI = true;
+disableChannels[]={0,2,6}; //0 = Global 1 = Side 2 = Command 3 = Group 4 = Vehicle 5 = Direct 6 = System
+enableItemsDropping = 0;
+
+briefing = 0;
+debriefing = 0;
+
+onPauseScript = "";
+loadScreen = "IMG\LOAD\LoadingScreen.jpg";
+
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 100;
+};
+
+aiKills = 1;
+diagRadio = 1;
+diagHit = 1;
+
+//SFX
+class CfgSounds
+{
+    sounds[] = {};
+
+};
+
+//Loads all hpp files
+#include "CONFIGS\MissionInit.hpp"
